@@ -2,22 +2,23 @@
 
 /**
  * _strcpy - copy paste string
- * @dest: destination
- * @src: source
+ * @dest: pointer to destination
+ * @src: pointer to source string
  *
  * Return: destination
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int inc = 0;
+	int i = 0;
 
-	while (*(src + inc) != '\0')
+	while (*(src + i) != '\0')
 	{
-		*dest + inc) = *(src + inc);
-		inc++;
+		*(dest + i) = *(src + i);
+		i++;
 	}
-	*(dest + inc) = '\0';
+
+	*(dest + i) = '\0';
 
 	return (dest);
 }
